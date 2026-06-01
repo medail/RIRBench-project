@@ -1,11 +1,13 @@
 # RIRBench — Project Page
 
-> **In Tune with the Room: Advancing Blind RIR Generation Through a Comprehensive Evaluation Framework**
-> Sebastian Stauß, Hiroshi Watanabe, Thomas Schmid — EUSIPCO 2026
+> In Tune with the Room: Advancing Blind RIR Generation Through a Comprehensive Evaluation Framework
+
+[![Paper](https://img.shields.io/badge/Paper-EUSIPCO%202026-blue)](#citation)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
 This repository contains the source code for the short paper's project page: [medail.github.io/RIRBench-project](https://medail.github.io/RIRBench-project)
 
-The code can be found here: [github.com/medail/RIRBench](https://github.com/medail/RIRBench)
+The code and data can be found here: [github.com/medail/RIRBench](https://github.com/medail/RIRBench)
 
 ---
 
