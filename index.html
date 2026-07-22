@@ -44,6 +44,49 @@
       height: 480px;
       border: none;
     }
+
+    /* --- Logos --- */
+    .venue-line {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-top: 0.8em;
+    }
+    .venue-logo {
+      height: 44px;
+      width: auto;
+      object-fit: contain;
+    }
+    .affiliation-logos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2.2rem;
+      margin: 2.2rem auto 0;
+      max-width: 900px;
+    }
+    .affiliation-logos img {
+      height: 52px;
+      width: auto;
+      max-width: 190px;
+      object-fit: contain;
+      filter: grayscale(100%);
+      opacity: 0.72;
+      transition: filter 0.2s ease, opacity 0.2s ease;
+    }
+    .affiliation-logos a:hover img,
+    .affiliation-logos img:hover {
+      filter: grayscale(0%);
+      opacity: 1;
+    }
+    @media screen and (max-width: 768px) {
+      .affiliation-logos { gap: 1.4rem; }
+      .affiliation-logos img { height: 38px; max-width: 130px; }
+      .venue-logo { height: 34px; }
+    }
   </style>
 </head>
 <body>
@@ -102,43 +145,13 @@
             <span class="author-block"><sup>7</sup>School of Computing and Communications, Lancaster University Leipzig, Germany</span>
           </div>
 
-          <div class="is-size-5" style="margin-top:0.6em;">
-            <strong>EUSIPCO 2026</strong>
-          </div>
-
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <span class="link-block">
-                <a class="external-link button is-normal is-rounded is-dark"
-                   style="opacity:0.5; cursor:default; pointer-events:none;">
-                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                  <span>Paper (coming soon)</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://github.com/AIIM-Group/RIRBench"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon"><i class="fab fa-github"></i></span>
-                  <span>Code, links to data &amp; framework</span>
-                </a>
-              </span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
           <!-- Conference logo + venue -->
           <div class="venue-line">
             <img src="./static/images/logos/eusipco2026.png"
                  alt="EUSIPCO 2026" class="venue-logo">
             <span class="is-size-5"><strong>EUSIPCO 2026</strong></span>
           </div>
- 
+
           <div class="column has-text-centered">
             <div class="publication-links">
               <span class="link-block">
@@ -152,12 +165,12 @@
                 <a href="https://github.com/AIIM-Group/RIRBench"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon"><i class="fab fa-github"></i></span>
-                  <span>Code &amp; Framework</span>
+                  <span>Code, Links to Data &amp; Framework</span>
                 </a>
               </span>
             </div>
           </div>
- 
+
           <!-- Institution logos -->
           <div class="affiliation-logos">
             <a href="https://www.medizin.uni-halle.de/" target="_blank" rel="noopener">
@@ -181,14 +194,14 @@
                    alt="Lancaster University">
             </a>
           </div>
- 
+
         </div>
       </div>
     </div>
   </div>
 </section>
 
-  
+
 <!-- Abstract -->
 <section class="section">
   <div class="container is-max-desktop">
